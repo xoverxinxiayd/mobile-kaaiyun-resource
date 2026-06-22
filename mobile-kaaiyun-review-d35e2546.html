@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开云·一段简洁的页面叙述</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf8;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2.5rem 1.5rem 5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* hero 短开场 */
+        .hero-tag {
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #9a9a96;
+            border-left: 2px solid #d4d4cf;
+            padding-left: 1rem;
+            margin-bottom: 2.2rem;
+            font-weight: 400;
+        }
+
+        .main-heading {
+            font-size: 2.4rem;
+            font-weight: 450;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            margin-bottom: 1.8rem;
+            color: #1b1b19;
+        }
+
+        .main-heading small {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 350;
+            color: #63635e;
+            letter-spacing: 0.02em;
+            margin-top: 0.5rem;
+        }
+
+        /* 承接段落 */
+        .intro-text {
+            font-size: 1rem;
+            color: #2d2d2a;
+            margin-bottom: 2.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .intro-text p {
+            margin-bottom: 1.2rem;
+        }
+
+        .intro-text a {
+            color: #2a5c4a;
+            text-decoration: none;
+            border-bottom: 1px solid #b9cdc0;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .intro-text a:hover {
+            border-bottom-color: #2a5c4a;
+            color: #1a3f32;
+        }
+
+        /* 特点列表 — 极简卡片式 */
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin: 2.8rem 0 3rem;
+            border-top: 1px solid #e3e3de;
+            padding-top: 2.2rem;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            padding: 1.3rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 0 0 1px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.25s;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-num {
+            font-size: 1.1rem;
+            font-weight: 350;
+            color: #b0aea8;
+            min-width: 2rem;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-title {
+            font-weight: 470;
+            font-size: 1.05rem;
+            letter-spacing: -0.01em;
+            color: #1e1d1a;
+            margin-bottom: 0.25rem;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #565651;
+            line-height: 1.5;
+        }
+
+        /* 温和的收尾段落 */
+        .closing-note {
+            margin-top: 2.8rem;
+            padding: 1.6rem 0 0.2rem;
+            border-top: 1px solid #e8e8e3;
+            font-size: 0.95rem;
+            color: #4a4a45;
+            line-height: 1.7;
+        }
+
+        .closing-note a {
+            color: #2a5c4a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccdbd0;
+            transition: border-color 0.2s;
+        }
+
+        .closing-note a:hover {
+            border-bottom-color: #2a5c4a;
+        }
+
+        .closing-note .small-meta {
+            display: block;
+            margin-top: 1.2rem;
+            font-size: 0.8rem;
+            color: #a8a6a0;
+            letter-spacing: 0.02em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 580px) {
+            body {
+                padding: 1.8rem 1.2rem 4rem;
+            }
+
+            .main-heading {
+                font-size: 1.8rem;
+            }
+
+            .main-heading small {
+                font-size: 0.95rem;
+            }
+
+            .feature-item {
+                padding: 1rem 1.2rem;
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+
+            .feature-num {
+                min-width: auto;
+            }
+
+            .intro-text {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .main-heading {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero 短开场 -->
+        <div class="hero-tag">/ 从一处稳定的入口开始</div>
+
+        <h1 class="main-heading">
+            没有复杂的前奏
+            <small>只需要一个清晰、安静的页面。</small>
+        </h1>
+
+        <!-- 承接段落，自然嵌入链接 -->
+        <div class="intro-text">
+            <p>
+                很多服务在第一次使用时，总免不了层层跳转、弹窗与催促。但<strong> <a href="https://mobile-kaaiyun.com">开云</a></strong> 选择了另一种方式——让一切从简洁的界面说明开始。你看到的内容就是它想传递的：一个入口、一段描述、一组特点，没有多余的干扰。
+            </p>
+            <p>
+                或许你会好奇，为什么要把入口做得这么「轻」。其实，越轻的入口，意味着你越不需要花精力去分辨哪些是功能、哪些是噪音。页面本身就是一个稳定的锚点，你随时可以回到这里重新阅读、确认，再决定下一步。
+            </p>
+        </div>
+
+        <!-- 特点列表（卡片式，三个特点） -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="feature-num">01</span>
+                <div class="feature-content">
+                    <div class="feature-title">直白的页面结构</div>
+                    <div class="feature-desc">没有隐藏的折叠菜单，也没有突然弹出的遮罩。标题、正文、列表依次排列，你永远知道自己读到哪一段。</div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-num">02</span>
+                <div class="feature-content">
+                    <div class="feature-title">克制的视觉语言</div>
+                    <div class="feature-desc">浅灰背景、窄栏宽度、字重变化轻微——这些细节共同构成一种「不打扰」的阅读氛围，让注意力自然落在文字本身。</div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-num">03</span>
+                <div class="feature-content">
+                    <div class="feature-title">一致的返回锚点</div>
+                    <div class="feature-desc">无论你在页面内浏览了多久，顶部的标识和链接位置始终不变。它像一处安静的坐标，让你随时确认自己在哪里。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 温和结尾 + FAQ 摘要风格段落 -->
+        <div class="closing-note">
+            <p>
+                如果你正在寻找一个不需要反复适应的服务页面，不妨记住<strong> <a href="https://mobile-kaaiyun.com">开云</a></strong> 这个位置。它不会用大字号催促你点击，也不会用闪烁的色块吸引注意力。它只是摆好了内容，等你需要的时候再来。
+            </p>
+            <p style="margin-top: 1.2rem;">
+                <span style="font-weight: 420; color: #2d2d29;">常见疑问的简短回应：</span><br>
+                页面内所有信息均基于页面本身的描述。如果你想了解更具体的细节，直接访问链接即可，那里不会有出乎意料的跳转。
+            </p>
+            <span class="small-meta">—— 页面叙述 · 2025 · 无冗余结构 ——</span>
+        </div>
+    </div>
+</body>
+</html>
